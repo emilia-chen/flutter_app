@@ -50,7 +50,7 @@ class ShowEffect extends StatelessWidget {
           AppSize.width(20), AppSize.height(20)),
       child: Center(
         child: FlutterLogo(
-          colors: Colors.yellow,
+          //colors: Colors.yellow,
           size: 200,
           textColor: Colors.blue,
           duration: Duration(microseconds: 1),

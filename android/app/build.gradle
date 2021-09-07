@@ -27,9 +27,9 @@ apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 // release debug注释下面这三行
 
-def keystorePropertiesFile = rootProject.file("key.properties")
-def keystoreProperties = new Properties()
-keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+// def keystorePropertiesFile = rootProject.file("key.properties")
+// def keystoreProperties = new Properties()
+// keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 android {
     compileSdkVersion 28
@@ -52,21 +52,21 @@ android {
     }
     // 测试key，
     // debug注释signingConfigs
-    signingConfigs {
-        release {
-            keyAlias "key"
-            keyPassword "li123456"
-            storeFile file("D:/MyProjectPrivate/key/key.jks")
-            storePassword "li123456"
-        }
-    }
+    // signingConfigs {
+    //     release {
+    //         keyAlias "key"
+    //         keyPassword "li123456"
+    //         storeFile file("D:/MyProjectPrivate/key/key.jks")
+    //         storePassword "li123456"
+    //     }
+    // }
     buildTypes {
         release {
             // debug
             // signingConfig signingConfigs.debug
 
             // release debug注释下面四行
-            signingConfig signingConfigs.release
+            //signingConfig signingConfigs.release
 
             minifyEnabled true
             useProguard true
